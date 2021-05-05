@@ -13,21 +13,24 @@ int main(int argc, char* argv[]){
   Timer time;
   time.start();
 
-  SplayTree tree;//TODO: put here the constructor of your Splay tree
+  // The constructor of the Splay tree
+  SplayTree tree;
   for(auto i : values){
-    tree = splayInsert(i, tree);//TODO: call the insert function on your splay tree
+    // Call the insert function on the splay tree
+    tree = splayInsert(i, tree);
   }
   time.stop();
   cout << "Time for building " << time.getElapsedTimeInSec() << endl;
 
-  //search numbers in binary tree
+  // Search for each number in the binary tree
   time.start();
   for(auto i : values){
-      tree = splaySearch(i, tree);//TODO: call the search function on your splay tree
+      // Calling the search function on the splay tree one number at a time
+      tree = splaySearch(i, tree);
   }
   time.stop();
   cout << "Time for searches " << time.getElapsedTimeInSec() << endl;
 
-  //TODO: print the content of your Splay tree
+  // Printing the content of the Splay tree
   inOrderPrint(tree.getRoot());
 }
