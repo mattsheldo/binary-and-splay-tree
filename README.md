@@ -1,1 +1,9 @@
-# binary-and-splay-tree
+# Binary and Splay Trees
+
+## Binary Tree
+
+## Splay Tree
+
+## Try it yourself!
+
+
